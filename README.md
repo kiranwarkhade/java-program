@@ -57,27 +57,51 @@ Array of squares: Create an array containing the squares of the elements.
 Sample Output:
 
 Largest number: 50
+
 Smallest number: 5
+
 Sorted array: [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
+
 Reversed array: [45, 30, 25, 40, 35, 50, 20, 15, 5, 10]
+
 Is array sorted: false
+
 Second largest number: 40
+
 Occurrences of 20: 1
+
 Merged array: [10, 5, 20, 50, 35, 40, 15, 25, 30, 45, 60, 70, 80]
+
 Array without duplicates: [10, 5, 20, 50, 35, 40, 15, 25, 30, 45]
+
 Average of the array: 28.5
+
 Array with elements multiplied by 2: [20, 10, 40, 100, 70, 80, 30, 50, 60, 90]
+
 All elements greater than 20: false
+
 Any even number: true
+
 Sum of elements: 285
+
 Maximum value using reduce: 50
+
 Minimum value using reduce: 5
+
 Array as List: [10, 5, 20, 50, 35, 40, 15, 25, 30, 45]
+
 First number greater than 20: 50
+
 Sorted in descending order: [50, 45, 40, 35, 30, 25, 20, 15, 10, 5]
+
 Count of numbers greater than 30: 5
+
 Array after rotation by 2 positions: [35, 40, 15, 25, 30, 45, 10, 5, 20, 50]
+
 Intersection of two arrays: [20, 30]
+
 Union of two arrays: [10, 20, 30, 40, 50, 60, 70, 80]
+
 Array with elements >= 20: [20, 50, 35, 40, 25, 30, 45]
+
 Array of squares: [100, 25, 400, 2500, 1225, 1600, 225, 625, 900, 2025]
