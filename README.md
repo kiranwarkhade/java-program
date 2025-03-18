@@ -5,29 +5,53 @@ Explanation of the Array Operations: 25+ program logic
 -----------------------------------------------------
 
 Largest number: Find the largest element using max().
+
 Smallest number: Find the smallest element using min().
+
 Sort array: Sort the array in ascending order using sorted().
+
 Reverse array: Reverse the array by manually swapping elements.
+
 Check if sorted: Compare the original array with the sorted version.
+
 Second largest: Get the second largest element after sorting and removing duplicates.
+
 Count occurrences: Count occurrences of a specific element (20).
+
 Merge arrays: Merge two arrays into one.
+
 Remove duplicates: Use distinct() to remove duplicates from an array.
+
 Average: Find the average of array elements using average().
+
 Multiply each element by 2: Map each element to its double.
+
 All greater than 20: Check if all elements are greater than 20 using allMatch().
+
 Any even number: Check if any element is even using anyMatch().
+
 Sum of elements: Get the sum of elements using sum().
+
 Maximum using reduce: Use reduce() to find the maximum value.
+
 Minimum using reduce: Use reduce() to find the minimum value.
+
 Convert to list: Convert the array to a List using boxed() and collect().
+
 First element greater than 20: Use findFirst() to find the first element greater than 20.
+
 Sort in descending order: Sort the array in reverse order using Comparator.reverseOrder().
+
 Count elements greater than 30: Count the elements greater than 30.
+
 Rotate array: Rotate the array by n positions.
+
 Intersection of arrays: Find the common elements between two arrays.
+
 Union of arrays: Find the union of two arrays using distinct().
+
 Remove elements less than 20: Filter elements greater than or equal to 20.
+
 Array of squares: Create an array containing the squares of the elements.
 ----------------------------------------------------------------------------------------------------
 Sample Output:
