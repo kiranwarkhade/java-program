@@ -259,4 +259,120 @@ public class StringLogicPrograms {
                 .mapToObj(c -> String.valueOf((char) c))
                 .collect(Collectors.joining());
     }
+
+    // 1. Reverse a string using for loop
+    public static String reverseString(String str) {
+        StringBuilder reversed = new StringBuilder();
+        for (int i = str.length() - 1; i >= 0; i--) {
+            reversed.append(str.charAt(i));
+        }
+        return reversed.toString();
+    }
+
+    // 2. Check if a string is a palindrome
+    public static boolean checkPalindrome(String str) {
+        int start = 0, end = str.length() - 1;
+        while (start < end) {
+            if (str.charAt(start) != str.charAt(end)) {
+                return false;
+            }
+            start++;
+            end--;
+        }
+        return true;
+    }
+
+    // 3. Count the number of vowels in a string
+    public static int countVowels(String str) {
+        int count = 0;
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' ||
+                    ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U') {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    // 4. Count the number of consonants in a string
+    public static int countConsonants(String str) {
+        int count = 0;
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+            if (Character.isLetter(ch) && (ch != 'a' && ch != 'e' && ch != 'i' && ch != 'o' && ch != 'u' &&
+                    ch != 'A' && ch != 'E' && ch != 'I' && ch != 'O' && ch != 'U')) {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    // 5. Check if a string contains a specific character
+    public static boolean containsCharacter(String str, char ch) {
+        for (int i = 0; i < str.length(); i++) {
+            if (str.charAt(i) == ch) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    // 6. Remove all digits from a string
+    public static String removeDigits(String str) {
+        StringBuilder result = new StringBuilder();
+        for (int i = 0; i < str.length(); i++) {
+            if (!Character.isDigit(str.charAt(i))) {
+                result.append(str.charAt(i));
+            }
+        }
+        return result.toString();
+    }
+
+    // 7. Convert string to uppercase using for loop
+    public static String toUpperCase(String str) {
+        StringBuilder upperCaseStr = new StringBuilder();
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+            if (Character.isLowerCase(ch)) {
+                upperCaseStr.append(Character.toUpperCase(ch));
+            } else {
+                upperCaseStr.append(ch);
+            }
+        }
+        return upperCaseStr.toString();
+    }
+
+    // 8. Find the first non-repeating character in a string
+    public static char firstNonRepeatingCharacter(String str) {
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+            if (str.indexOf(ch) == str.lastIndexOf(ch)) {
+                return ch;
+            }
+        }
+        return '\0'; // Return null character if no non-repeating character found
+    }
+
+    // 9. Count occurrences of a specific character in the string
+    public static int countCharacterOccurrences(String str, char ch) {
+        int count = 0;
+        for (int i = 0; i < str.length(); i++) {
+            if (str.charAt(i) == ch) {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    // 10. Check if a string contains only alphabets using a for loop
+    public static boolean isAlphaOnly(String str) {
+        for (int i = 0; i < str.length(); i++) {
+            if (!Character.isLetter(str.charAt(i))) {
+                return false;
+            }
+        }
+        return true;
+    }
+
 }
