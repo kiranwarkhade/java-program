@@ -110,7 +110,7 @@ public class ArrayOperations {
         // 22. Find the intersection of two arrays
         int[] array1 = {10, 20, 30, 40};
         int[] array2 = {20, 30, 50, 60};
-        int[] intersection = Arrays.stream(array1).filter(m -> Arrays.stream(array2).anyMatch(x -> x == m)).toArray();
+        int[] intersection = Arrays.stream(array1).filter(n -> Arrays.stream(array2).anyMatch(x -> x == n)).toArray();
         System.out.println("Intersection of two arrays: " + Arrays.toString(intersection));
 
         // 23. Find the union of two arrays
@@ -121,11 +121,11 @@ public class ArrayOperations {
         System.out.println("Union of two arrays: " + Arrays.toString(union));
 
         // 24. Remove all elements less than 20
-        int[] filteredArray = Arrays.stream(numbers).filter(t -> t >= 20).toArray();
+        int[] filteredArray = Arrays.stream(numbers).filter(n -> n >= 20).toArray();
         System.out.println("Array with elements >= 20: " + Arrays.toString(filteredArray));
 
         // 25. Create an array of squares of the elements
-        int[] squaredArray = Arrays.stream(numbers).map(r -> r * r).toArray();
+        int[] squaredArray = Arrays.stream(numbers).map(n -> n * n).toArray();
         System.out.println("Array of squares: " + Arrays.toString(squaredArray));
     }
 }
